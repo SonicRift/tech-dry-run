@@ -22,7 +22,7 @@ const sectionTitle = document.getElementById('section-title');
 const sectionImage = document.getElementById('section-image');
 const pageButton = document.getElementById('page-button');
 
-let happyDay;
+let happyDay = true;
 
 pageButton.addEventListener('click', function() {
   if (happyDay) {
@@ -34,4 +34,6 @@ pageButton.addEventListener('click', function() {
     sectionImage.setAttribute('src', '../assets/happy.jpg');
     happyDay = true;
   }
+
+  console.log('Changed the day.')
 });
